@@ -73,7 +73,7 @@ function App() {
         <div className="md:flex pt-14 pr-32">
           <h2 className="text-bold text-md text-white pr-4 pb-2 md:pb-0">Border Countries: </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 pb-10">
-            {neighbours.map((country:any) => {
+            {neighbours?.map((country:any) => {
               return <button onClick={() => setDetailCountry(country)} className="text-white text-sm px-4 py-1 bg-[#2b3743] rounded-md">{country.name.common}</button>
             })}
           </div>
