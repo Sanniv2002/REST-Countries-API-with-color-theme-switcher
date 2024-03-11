@@ -18,7 +18,7 @@ function App() {
       setCountries(query === "" ? filterByContinet : filterByContinet.filter((country:any) => (country.name.common).includes(query)))
     }
     fetchCountries()
-  }, [continent, query])
+  }, [continent, query, detailView])
   console.log(detailCountry)
 
 
